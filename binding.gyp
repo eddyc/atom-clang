@@ -28,11 +28,22 @@
         "-g",
         "-O2",
       ],
-      "cflags_cc": [
-        "-g",
-        "-std=c++11",
-        "-stdlib=libc++",
-        "-O2",
+      "conditions": [
+        ['OS=="mac"', {
+           "cflags_cc": [
+           "-g",
+           "-std=c++11",
+           "-stdlib=libc++",
+           "-O2"
+          ],
+        }],
+        ['OS=="linux"', {
+           "cflags_cc": [
+           "-g",
+           "-std=c++11",
+           "-O2"
+          ],
+        }]
       ],
       "ldflags": [
         "-flto",
