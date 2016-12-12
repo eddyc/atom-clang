@@ -40,7 +40,6 @@
       "xcode_settings": {
         "GCC_GENERATE_DEBUGGING_SYMBOLS": "YES",
         "CLANG_CXX_LANGUAGE_STANDARD": "c++11",
-        'GCC_ENABLE_CPP_EXCEPTIONS': 'YES',
         'CLANG_CXX_LIBRARY': 'libc++',
         "GCC_OPTIMIZATION_LEVEL": "2",
         "OTHER_CFLAGS": [
